@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "a3blocks/wc-product-dgallery",
+	"title": "Product Dynamic Gallery",
+	"category": "a3rev-blocks",
+	"description": "Displays Dynamic Gallery of current product.",
+	"keywords": [ "gallery", "dynamic", "slider" ],
+	"version": "1.0",
+	"textdomain": "woocommerce-dynamic-gallery",
+	"attributes":{
+		"postID": {
+			"type": "string"
+		}
+	},
+	"selectors": {
+        "root": ".wp-block-a3blocks-wc-product-dgallery"
+    },
+	"supports": {
+		"align": true,
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": false
+		}
+	},
+	"editorScript": "wc-dgallery-block-editor",
+	"editorStyle": "wc-dgallery-block-editor",
+	"viewScript": [ "a3-dgallery-script" ],
+	"style": [ "a3-dgallery-style" ]
+}
